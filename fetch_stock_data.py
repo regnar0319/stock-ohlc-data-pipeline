@@ -1,3 +1,15 @@
+# ---------------------------------------------
+# LATEST VERSION (ACTIVE)
+# ---------------------------------------------
+# This script is the improved and currently used
+# version of the stock data collection system.
+# It is designed for reliability and analysis
+# and is used for my college assignment.
+#
+# This version includes fixes and improvements
+# over the earlier implementation.
+# ---------------------------------------------
+
 import yfinance as yf
 import pandas as pd
 from sqlalchemy import create_engine, text
@@ -56,5 +68,6 @@ for symbol in STOCKS:
         print(f"   ✅ SUCCESS: {len(new_data)} rows inserted.")
     else:
         print("   ⏭️ SKIPPED: All data already exists in DB.")
+
 
 print("\nAll tasks finished.")
