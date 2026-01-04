@@ -1,3 +1,14 @@
+# ---------------------------------------------
+# EARLIER VERSION (ARCHIVED)
+# ---------------------------------------------
+# This script is the initial implementation of the
+# stock data collection system.
+# It stores stock OHLC data on a day-to-day basis.
+#
+# This version is kept for reference and learning
+# purposes and is available on GitHub.
+# ---------------------------------------------
+
 import os
 from dotenv import load_dotenv
 import yfinance as yf
@@ -59,4 +70,5 @@ for symbol in STOCKS:
         print(f" Inserted data for {symbol}")
 
     except Exception as e:
+
         print(f" Error for {symbol}: {e}")
